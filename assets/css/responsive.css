@@ -643,8 +643,9 @@
     .momba_ahy
     {
         position: absolute;
-        bottom: 70px;
+        bottom: 90px;
         font-size: 15px;
+        display: none;
     }
 
     .still
@@ -710,11 +711,12 @@
     }
     .momba_ahy
     {
-        position: absolute;
+        /* position: absolute;
         right: 50px;
-        top: 50px;
+        top: 0px;
         width: 50%;
-        font-size: 13px;
+        font-size: 13px; */
+        display: none;
     }
     .reseau_sociaux
     {
@@ -728,5 +730,24 @@
         position: absolute;
         bottom: 50px;
         left: 500px; 
+    }
+}
+@media (max-height:630px)
+{
+    .momba_ahy
+    {
+        display: none;
+        font-size: 11px;
+    }
+    .reseau_sociaux
+    {
+        margin: 0;
+        margin-top: -100px;
+    }
+    .img_me_conteneur
+    {
+        max-width: 100px;
+        max-height:100px;
+        /* display: none; */
     }
 }
