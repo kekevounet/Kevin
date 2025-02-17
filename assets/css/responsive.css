@@ -614,7 +614,7 @@
         display: none;
     }
 }
-@media (max-width:450px)
+@media (max-width:300px)
 {
     .exp_1
     {
@@ -683,5 +683,50 @@
         
         justify-content: space-around;
         display: flex;
+    }
+}
+@media (max-height:390px) and (min-width:734px)
+{
+    .experience
+    {
+        height: 230vh;
+    }
+    .timeline
+    {
+        height: 190vh;
+    }
+    .mon_competence
+    {
+        height: 100vh;
+    }
+    .competence
+    {
+        margin-top: 50px;
+    }
+    .still
+    {
+        position: absolute;
+        bottom: 10px;
+    }
+    .momba_ahy
+    {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        width: 50%;
+        font-size: 13px;
+    }
+    .reseau_sociaux
+    {
+        display: flex;
+        position: absolute;
+        bottom: 70px;
+        left: 500px; 
+    }
+    .still
+    {
+        position: absolute;
+        bottom: 50px;
+        left: 500px; 
     }
 }
