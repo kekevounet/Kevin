@@ -1,0 +1,489 @@
+*
+{
+    font-family: 'Times New Roman', Times, serif ;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    overflow: hidden;
+    
+}
+html
+{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb
+{
+    background: black;
+    box-shadow: 0 100vh 0 100vh white;
+}
+/* ========================================= SIDEBAR ============================================== */
+.sidebars
+{
+    width: 23%;
+    height: 100vh;
+    background-color: #6c757d;
+    box-shadow: 0 0 2px black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    box-shadow: 13px 0px 20px -8px rgba(0,0,0,0.75),-2px 0px 27px 2px rgba(0,0,0,0.57) inset;
+}
+.sidebars_btn
+{
+    width: 100%;
+    height: 100vh;
+}
+.momba_ahy
+{
+    display: none;
+    margin: 20px;
+    height: 30vh;
+    font-size: 20px;
+    color: white;
+}
+.img_me_conteneur
+{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    overflow:hidden;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 3px double white;
+    cursor: pointer;
+    transition: 1s;
+}
+.img_me_conteneur:hover
+{
+    border:none;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.img_me
+{
+    width: 100%;
+    height: 100%;
+    scale: 1.4;
+    object-fit:contain;
+    object-position: center;
+}
+.my_name
+{
+    padding: 20px;
+    margin: 0 20px;
+    color: white;
+}
+.menu_liste
+{
+    align-items: center;
+    list-style: none;
+}
+.menu_liste_lien
+{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_liste_lien1
+{
+    padding: 18px 40px;
+    color: white;
+}
+.menu_liste_lien1_focus
+{
+    color: black;
+    background-color:#dee2e6;
+    box-shadow:0 0 10px white;
+}
+.menu_liste_lien1:hover
+{
+    background-color:#dee2e63d;
+    color: black;
+    /* box-shadow:-2px 0px 27px 2px rgba(0,0,0,0.57) inset,0 0 2px black; */
+}
+.reseau_sociaux
+{
+    display: flex;
+    margin: 40px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+.lien_logo
+{
+    color: white;
+    transition: 0.1s;
+}
+.lien_logo:hover
+{
+    transition: 0.1s;
+    color: #dee2e6;    
+    scale: 1.2;
+}
+.icon_menu
+{
+    padding: 0 10px;
+}
+.mon_nom
+{
+    cursor: pointer;
+}
+.mon_job
+{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.still
+{
+    font-weight: bold;
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.6);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left:30px;
+}
+
+.menu_resp_me
+{
+    font-size: 30px;
+    display: none;
+}
+.menu_resp_me_hide
+{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+    cursor: pointer;
+}
+/* ========================================= SIDEBAR ============================================== */
+
+/* ========================================= BIENVENUE ============================================== */
+.bienvenue
+{
+    background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+    height: 100vh;
+    width: 77%;
+    margin: 0 23%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.bienvenue_texte
+{
+    /* position: absolute;
+    top: 300px;
+    left: 450px; */
+    cursor: pointer;
+    margin: 0 20px;
+}
+.bienvenue_texte_1
+{
+    /* position: absolute;
+    top: 350px;
+    left: 450px; */
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0 20px;
+
+}
+.bienvenue_texte_2
+{
+    /* position: absolute;
+    top: 400px;
+    left: 450px; */
+    width: 30%;
+    margin: 0 20px;
+
+}
+/* ========================================= BIENVENUE ============================================== */
+
+/* ========================================= PROPOS ============================================== */
+
+.competence
+{
+    margin: 0 23%;
+    background-color: white;
+    height: 100vh;
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mon_competence
+{
+    width: 70%;
+    height: 60vh;
+    background-color: #6c757d;
+}
+.titre_competence
+{
+    width: 100%;
+    height: 15%;
+    place-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-bottom: double;
+}
+.competence_liste
+{
+    margin: 100px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px 10px;
+}
+/* ========================================= PROPOS ============================================== */
+
+
+/* ========================================= EXPERIENCE ============================================== */
+.experience
+{
+    margin: 0 23%;
+    background-color: white;
+    height: 100vh;
+    width: 77%;
+    
+}
+.mon_experience
+{
+    margin: 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+}
+.experience_titre
+{
+    margin-top: 20px;
+    margin-left: 135px;
+    width: 75%;
+    height: 10vh;
+    background-color: #6c757d;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.timeline
+{
+    height: 87vh;
+    width: 2px;
+    background-color: black;
+    margin-left: 550px;
+    position: relative;
+}
+.timeline_icon_1
+{
+    width: 40px;
+    height: 40px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: -19px;
+    z-index: 10;
+}
+.timeline_icon_2
+{
+    width: 40px;
+    height: 40px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 300px;
+    right: -19px;
+    z-index: 10;
+}
+.timeline_icon_3
+{
+    width: 40px;
+    height: 40px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 520px;
+    right: -19px;
+    z-index: 10;
+}
+.fa-briefcase
+{
+    font-size: 20px;
+    color: white;
+}
+.exp_contenu
+{
+    margin: 10px 10px;
+}
+.exp_1
+{
+    width: 290px;
+    height: 150px;
+    background-color: #6c757d;
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    border-radius: 10px;
+    color: white;
+}
+.exp_1:after
+{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 14px solid #6c757d;
+    border-right: 0px solid #6c757d;
+    top: 20px;
+    left: 290px;
+}
+.exp_2
+{
+    width: 290px;
+    height: 150px;
+    background-color: #6c757d;
+    position: absolute;
+    left: 100px;
+    top: 280px;
+    border-radius: 10px;
+    color: white;
+}
+.exp_2:after
+{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 0 solid #6c757d;
+    border-right: 14px solid #6c757d;
+    top: 20px;
+    right: 290px;
+}
+.exp_3
+{
+    width: 290px;
+    height: 165px;
+    background-color: #6c757d;
+    position: absolute;
+    right: 100px;
+    top: 500px;
+    border-radius: 10px;
+    color: white;
+}
+.exp_3:after
+{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 14px solid #6c757d;
+    border-right: 0px solid #6c757d;
+    top: 20px;
+    left: 290px;
+}
+/* ========================================= EXPERIENCE ============================================== */
+
+/* ========================================= PORTFOLIO ============================================== */
+.portfolio
+{
+    margin: 0 23%;
+    background-color: white;
+    height: 100vh;
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(315deg, rgba(24,24,24, 0.92) 0%, rgba(24,24,24, 0.92) 5%,rgb(61,61,61) 5%, rgb(61,61,61) 7%,rgba(98,98,98, 0.91) 7%, rgba(98,98,98, 0.91) 9%,rgb(255,255,255) 9%, rgb(255,255,255) 100%);
+}
+.mon_portfolio
+{
+    cursor: pointer;
+}
+
+/* ========================================= PORTFOLIO ============================================== */
+
+/* ========================================= CLICK ANIMATION ========================================= */
+.click_animation
+{
+    animation: click_animate 1s;
+}
+@keyframes click_animate
+{
+    20%
+    {
+        transform: rotate(10deg);
+    }
+    30%
+    {
+        transform: translate(-10px);
+    }
+    40%
+    {
+        transform: rotate(-10deg);
+    }
+    50%
+    {
+        transform: translate(10px);
+    }
+    60%
+    {
+        transform: rotate(5deg);
+    }
+    70%
+    {
+        transform: translate(-5px);
+    }
+    80%
+    {
+        transform: rotate(-5deg);
+    }
+    90%
+    {
+        transform: translate(5px);
+    }
+}
+.mon_job_anim
+{
+    margin-left: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+/* ============================================== et om zay ny responsive complet  =============================================*/
+
+
+
+/* ============================================== et om zay ny responsive complet  =============================================*/
+/*
+ couleur mety ilain
+#dee2e6 ty le couleur an le bordure, le light ito
+#6c757d ty le couleur an le bordure, le dark ito
+#212529 couleur an le background dark ito, de le whitesmoke ny light
+*/
