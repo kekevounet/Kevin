@@ -614,7 +614,7 @@
         display: none;
     }
 }
-@media (max-width:367px)
+@media (max-width:300px)
 {
     .exp_1
     {
@@ -652,7 +652,7 @@
     }
 
 }
-@media (max-width:637px)
+/* @media (max-width:637px)
 {
     .exp_1
     {
@@ -680,5 +680,5 @@
         justify-content: space-around;
         display: flex;
     }
-}
+} */
 
