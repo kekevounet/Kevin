@@ -652,33 +652,15 @@
     }
 
 }
-/* @media (max-width:637px)
+@media (max-width:600px)
 {
-    .exp_1
+    .img_me_conteneur
     {
-        margin: 0;
-        width: 300px;
-        height: 150px;
-        margin-top: 100px;
+        max-width: 150px;
+        max-height: 150px;
     }
-    .exp_2
+    .momba_ahy
     {
-        margin: 20px 0;
-        width: 300px;
-        height: 150px;
+        font-size: 15px;
     }
-    .exp_3
-    {
-        margin: 0;
-        width: 300px;
-        height: 170px;
-    }
-    .reseau_sociaux
-    {
-        margin: 0 500px;
-        
-        justify-content: space-around;
-        display: flex;
-    }
-} */
-
+}
