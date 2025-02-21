@@ -448,7 +448,7 @@
 
 /* ============================  tapitra eto ny le mipotra le sidebars , manomboka caché izy eto */
 
- @media (max-width:929px)
+ /* @media (max-width:929px)
  {
     .lapdesk
     {
@@ -641,5 +641,184 @@
     {
         height: 75%;
         
+    }
+} */
+@media (max-width: 929px) {
+    .lapdesk {
+        display: none;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #000000 0%, rgba(88,13,119,0.78) 100%);
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .phone_fond {
+        width: 80%;
+        height: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .phone_me {
+        width: 90%;
+        height: 90%;
+        transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .page-content {
+        display: none;
+    }
+
+    #content-accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img_resp_phone {
+        width: 100%;
+        height: 100%;
+        scale: 1.4;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .img_resp_phone_conteneur {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px double white;
+        cursor: pointer;
+        transition: 1s;
+        box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2),
+                    0 6px 12px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 10px;
+    }
+
+    .text_phone {
+        top: 230px;
+        position: absolute;
+    }
+
+    .ligne_phone {
+        top: 300px;
+        position: absolute;
+        margin: 0 30px;
+        width: 90%;
+        height: 0.5px;
+        background-color: black;
+    }
+
+    .logo_phone {
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+    }
+
+    .logo_phone_logo {
+        margin: 0 30px;
+        color: black;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        font-size: 22px;
+        text-align: center;
+        width: 50px;
+        height: 47px;
+        z-index: 10;
+    }
+
+    .logo_phone_logo::after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    .logo_phone_logo:hover::after {
+        top: 0;
+        transition: 0.5s;
+        color: white;
+    }
+
+    .logo_phone_logo:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .ligne_phone_compt {
+        justify-content: center;
+        width: 600px;
+        height: 0.5px;
+        background-color: black;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 765px) {
+    .phone_fond {
+        height: 75%;
+    }
+}
+
+/* Adjust height based on different device heights */
+@media (max-height: 776px) {
+    .phone_fond {
+        height: 55%;
+    }
+}
+
+@media (max-height: 711px) {
+    .phone_fond {
+        height: 60%;
+    }
+}
+
+@media (max-height: 644px) {
+    .phone_fond {
+        height: 65%;
+    }
+}
+
+@media (max-height: 597px) {
+    .phone_fond {
+        height: 100%;
+    }
+}
+
+@media (max-height: 550px) {
+    .phone_fond {
+        height: 75%;
     }
 }
