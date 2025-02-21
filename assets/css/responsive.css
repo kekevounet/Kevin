@@ -652,7 +652,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(0deg, #000000 0%, rgba(88,13,119,0.78) 100%);
+        background: linear-gradient(0deg, #000000 0%, rgba(88, 13, 119, 0.78) 100%);
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -660,8 +660,8 @@
     }
 
     .phone_fond {
-        width: 80%;
-        height: 50%;
+        width: 85%; /* Ajustement pour mieux s'adapter à l'écran */
+        height: 55%; /* Réduction pour mieux s'adapter sur des écrans plus petits */
         background-color: white;
         display: flex;
         justify-content: center;
@@ -698,14 +698,14 @@
     .img_resp_phone {
         width: 100%;
         height: 100%;
-        scale: 1.4;
+        scale: 1.2; /* Légèrement réduit pour éviter que l'image dépasse sur petits écrans */
         object-fit: contain;
         object-position: center;
     }
 
     .img_resp_phone_conteneur {
-        width: 200px;
-        height: 200px;
+        width: 180px; /* Ajusté pour les petits écrans */
+        height: 180px; /* Ajusté pour les petits écrans */
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
         overflow: hidden;
@@ -785,40 +785,39 @@
     }
 }
 
-/* For smaller screens */
+/* Adjustments for smaller screens like iPhone 6s */
 @media (max-width: 765px) {
     .phone_fond {
-        height: 75%;
+        height: 70%;
     }
 }
 
-/* Adjust height based on different device heights */
 @media (max-height: 776px) {
     .phone_fond {
-        height: 55%;
+        height: 50%;
     }
 }
 
 @media (max-height: 711px) {
     .phone_fond {
-        height: 60%;
+        height: 55%;
     }
 }
 
 @media (max-height: 644px) {
     .phone_fond {
-        height: 65%;
+        height: 60%;
     }
 }
 
 @media (max-height: 597px) {
     .phone_fond {
-        height: 100%;
+        height: 90%; /* Ajusté pour les écrans plus petits */
     }
 }
 
 @media (max-height: 550px) {
     .phone_fond {
-        height: 75%;
+        height: 70%; /* Ajusté pour les très petits écrans */
     }
 }
