@@ -1,11 +1,16 @@
+@media (min-width:1200px)
+{
+    .phone
+    {
+        display: none;
+    }
+}
 @media (max-width:1400px)
 {
     .timeline
     {
         margin-left: 520px;
-       
     }
-
 }
 @media (max-width:1340px)
 {
@@ -442,312 +447,199 @@
 }
 
 /* ============================  tapitra eto ny le mipotra le sidebars , manomboka caché izy eto */
-@media (max-width:929px)
-{
-    body
-    {
-        overflow-y: visible;
-        overflow-x:hidden ;
-    }
-    .sidebars
+
+ @media (max-width:929px)
+ {
+    .lapdesk
     {
         display: none;
     }
-    .menu_resp_me
+    .phone
     {
-        display: block;
-        position: fixed;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        top: 20px;
-        left: 10px;
-        border-radius: 50%;
-        background-color: white;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 5px black inset, 0 0 5px black;
-    }
-    .bienvenue
-    {
+        background: linear-gradient(0deg, #000000 0%, rgba(88,13,119,0.78) 100%);
         width: 100%;
-        margin: 0;
-    }
-    .competence
-    {
-        width: 100%;
-        margin: 0;
-    }
-    .experience
-    {
-        width: 100%;
-        margin: 0;
-    }
-    .portfolio
-    {
-        width: 100%;
-        margin: 0;
-    }
-    .timeline
-    {
-        margin:auto;
-    } 
-}
-@media (max-width:630px)
-{
-    body
-    {
-        overflow-y: scroll;
-        overflow-x: none;
-    }
-    .timeline
-    {
-        margin:auto;
-    }
-    .mon_experience
-    {
-        margin: 40px 0;
-    }
-}
-@media (max-width:629px)
-{
-    .competence
-    {
-        background-color:blue transparent;
-        width: 100%;
-    }
-    .mon_competence
-    {
-        width: 100%;
-    }
-    .timeline
-    {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        background-color: transparent;
-        place-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .timeline_icon_1
-    {
-        display: none;
-    }
-    .timeline_icon_2
-    {
-        display: none;
-    }
-    .timeline_icon_3
-    {
-        display: none;
-    }
-    .mon_experience
-    {
-        width: 100%;
-        display: flex;
-        place-content: center;
-        flex-direction: column;
-        margin: 0;
-    }
-    .experience
-    {
-        margin: 0;
-        width: 100%;
-    }
-    .experience_titre
-    {
-        margin-left: 0;
-        width: 100%;
-    }
-    .exp_1
-    {
-        width: 290px;
-        height: 150px;
-        background-color: #6c757d;
-        border-radius: 10px;
-        color: white;
-        position: static;
-        margin: 30px 0;
-
-    }
-    .exp_2
-    {
-        width: 290px;
-        height: 150px;
-        background-color: #6c757d;
-        border-radius: 10px;
-        color: white;
-        position: static;
-        margin: 30px 0;
-
-
-    }
-    .exp_3
-    {
-        width: 290px;
-        height: 170px;
-        background-color: #6c757d;
-        border-radius: 10px;
-        color: white;
-        position: static;
-        margin: 30px 0;
-
-
-    }
-    .bienvenue_texte_2
-    {
-        width: 50%;
-    }
-    .exp_1:after
-    {
-        display: none;
-    }
-    .exp_2:after
-    {
-        display: none;
-    }
-    .exp_3:after
-    {
-        display: none;
-    }
-}
-@media (max-width:300px)
-{
-    .exp_1
-    {
-        margin: 0;
-        width: 300px;
-        height: 150px;
-        margin-top: 10px;
-    }
-    .exp_2
-    {
-        margin: 20px 0;
-        width: 300px;
-        height: 150px;
-    }
-    .img_me_conteneur
-    {
-        max-width: 150px;
-        max-height: 150px;
-    }
-    .exp_3
-    {
-        margin: 0;
-        width: 300px;
-        height: 170px;
-    }
-    .momba_ahy
-    {
-        position: absolute;
-        bottom: 90px;
-        font-size: 13px;
-        display: none;
-    }
-
-    .still
-    {
-        position: absolute;
-        bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-}
-@media (max-width:637px)
-{
-    .exp_1
-    {
-        margin: 0;
-        width: 300px;
-        height: 150px;
-        margin-top: 100px;
-    }
-    .exp_2
-    {
-        margin: 20px 0;
-        width: 300px;
-        height: 150px;
-    }
-    .exp_3
-    {
-        margin: 0;
-        width: 300px;
-        height: 170px;
-    }
-    .reseau_sociaux
-    {
-        margin: 0 500px;
-        
-        justify-content: space-around;
-        display: flex;
-    }
-}
-@media (max-height:390px) and (min-width:734px)
-{
-    .experience
-    {
-        height: 230vh;
-    }
-    .timeline
-    {
-        height: 190vh;
-    }
-    .mon_competence
-    {
         height: 100vh;
+        overflow: hidden;
+        position: relative;
     }
-    .competence
+    .phone_fond
     {
-        margin-top: 50px;
+        width: 80%;
+        height: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
     }
-    .still
+
+    .phone_me
     {
-        position: absolute;
-        bottom: 10px;
+        width: 90%;
+        height: 90%;
+        transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
     }
-    .momba_ahy
+    .page-content
     {
-        /* position: absolute;
-        right: 50px;
-        top: 0px;
-        width: 50%;
-        font-size: 13px; */
         display: none;
     }
-    .reseau_sociaux
+    #content-accueil
     {
         display: flex;
-        position: absolute;
-        bottom: 70px;
-        left: 500px; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .still
+    .img_resp_phone
+    {
+        width: 100%;
+        height: 100%;
+        scale: 1.4;
+        object-fit:contain;
+        object-position: center;
+    }
+    .img_resp_phone_conteneur
+    {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        overflow:hidden;
+        border: 3px double white;
+        cursor: pointer;
+        transition: 1s;
+        box-shadow: 0 3px 6px -2px rgba(0,0,0,0.2),
+            0 6px 12px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 10px;
+    }
+    .text_phone
+    {
+        top: 230px;
+        position: absolute;
+    }
+    .ligne_phone
+    {
+        top: 300px;
+        position: absolute;
+        margin: 0 30px;
+        width: 90%;
+        height: 0.5px;
+        background-color: black;
+    }
+    .logo_phone
     {
         position: absolute;
-        bottom: 50px;
-        left: 500px; 
+        bottom: 15px;
+        text-align: center;
+    }
+    .logo_phone_logo
+    {
+        margin: 0 30px;
+        color: black;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        font-size: 22px;  
+        text-align: center;
+        width: 50px; 
+        height: 47px;
+        z-index: 10;
+
+    }
+    .logo_phone_logo::after
+    {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    .logo_phone_logo:hover::after
+    {
+        top: 0;
+        transition: 0.5s;
+        color: white;
+      
+    }
+    .logo_phone_logo:hover
+    {
+        color: white;
+        transition: 0.5s;
+    }
+    .ligne_phone_compt
+    {
+        justify-content: center;
+        width: 600px;
+        height: 0.5px;
+        background-color: black;
     }
 }
-@media (max-height:630px)
+@media (max-width:765px)
 {
-    .momba_ahy
+    .phone_fond
     {
-        display: none;
-        font-size: 13px;
+        height: 75%;
+        
     }
-    .reseau_sociaux
+}
+
+@media (max-height:776px)
+{
+    .phone_fond
     {
-        margin: 0;
-        margin-top: -100px;
+        height: 55%;
+        
     }
-    .img_me_conteneur
+}
+@media (max-height:711px)
+{
+    .phone_fond
     {
-        max-width: 100px;
-        max-height:100px;
-        /* display: none; */
+        height: 60%;
+        
+    }
+}
+@media (max-height:644px)
+{
+    .phone_fond
+    {
+        height: 65%;
+        
+    }
+}
+@media (max-height:597px)
+{
+    .phone_fond
+    {
+        height: 100%;
+        
+    }
+}
+@media (max-height:550px)
+{
+    .phone_fond
+    {
+        height: 75%;
+        
     }
 }
