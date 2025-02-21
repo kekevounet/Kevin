@@ -180,7 +180,7 @@ $(function ()
 // le resp an le page
 $(document).ready(function () {
     let currentPage = 1;
-    const totalPages = 3;
+    const totalPages = 2;
 
     // Fonction pour changer de page
     function changePage() {
@@ -192,9 +192,9 @@ $(document).ready(function () {
             $("#content-accueil").fadeIn();
         } else if (currentPage === 2) {
             $("#content-portfolio").fadeIn();
-        } else if (currentPage === 3) {
-            $("#content-experiences").fadeIn();
-        }
+         } //else if (currentPage === 3) {
+        //     $("#content-experiences").fadeIn();
+        // }
     }
 
     // Fonction pour passer à la page suivante
