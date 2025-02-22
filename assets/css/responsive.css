@@ -448,7 +448,7 @@
 
 /* ============================  tapitra eto ny le mipotra le sidebars , manomboka caché izy eto */
 
- /* @media (max-width:929px)
+ @media (max-width:929px)
  {
     .lapdesk
     {
@@ -559,7 +559,6 @@
         width: 50px; 
         height: 47px;
         z-index: 10;
-
     }
     .logo_phone_logo::after
     {
@@ -570,14 +569,14 @@
         background-color: black;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
+        transition: 0.1s;
         z-index: -1;
         border-radius: 50%;
     }
     .logo_phone_logo:hover::after
     {
         top: 0;
-        transition: 0.5s;
+        transition: 0.1s;
         color: white;
       
     }
@@ -594,248 +593,80 @@
         background-color: black;
     }
 }
-@media (max-width:765px)
+@media (max-width:564px)
 {
     .phone_fond
     {
-        height: 75%;
-        
-    }
-}
-
-@media (max-height:776px)
-{
-    .phone_fond
-    {
-        height: 55%;
-        
-    }
-}
-@media (max-height:711px)
-{
-    .phone_fond
-    {
-        height: 60%;
-        
-    }
-}
-@media (max-height:644px)
-{
-    .phone_fond
-    {
-        height: 65%;
-        
-    }
-}
-@media (max-height:597px)
-{
-    .phone_fond
-    {
-        height: 100%;
-        
-    }
-}
-@media (max-height:550px)
-{
-    .phone_fond
-    {
-        height: 75%;
-        
-    }
-} */
-@media (max-width: 929px) {
-    .lapdesk {
-        display: none;
-    }
-
-    .phone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(0deg, #000000 0%, rgba(88, 13, 119, 0.78) 100%);
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .phone_fond {
-        width: 85%; /* Ajuste la largeur à 85% pour donner un peu de marge */
-        height: 55vh; /* La hauteur est ajustée pour mieux s'adapter aux écrans plus petits */
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .phone_me {
+        height:56%;
         width: 90%;
-        height: 90%;
-        transition: all 0.5s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-    }
 
-    .page-content {
-        display: none;
+        
     }
-
-    #content-accueil {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .img_resp_phone {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-        scale: 1.2; /* Ajuste l'échelle de l'image pour les petits écrans */
-    }
-
-    .img_resp_phone_conteneur {
-        width: 180px; /* Réduction de la taille de l'image pour mieux s'adapter */
-        height: 180px; /* Réduction de la taille de l'image pour mieux s'adapter */
-        background-color: rgb(255, 255, 255);
-        border-radius: 50%;
-        overflow: hidden;
-        border: 3px double white;
-        cursor: pointer;
-        transition: 1s;
-        box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2),
-                    0 6px 12px rgba(0, 0, 0, 0.1);
-        position: absolute;
-        top: 10%; /* Positionnement constant */
-    }
-
-    .text_phone {
-        top: 20%; /* Position ajustée mais toujours alignée sur l'écran */
-        position: absolute;
-    }
-
-    .ligne_phone {
-        top: 30%; /* La ligne se place légèrement plus bas, mais reste positionnée */
-        position: absolute;
-        margin: 0 30px;
+}
+@media (max-width:365px)
+{
+    .phone_fond
+    {
+        height:60%; 
         width: 90%;
-        height: 0.5px;
-        background-color: black;
     }
-
-    .logo_phone {
-        position: absolute;
-        bottom: 5%; /* Position en bas ajustée */
-        text-align: center;
+}
+@media (max-width:325px)
+{
+    .ligne_phone
+    {
+        top: 300px;
     }
-
-    .logo_phone_logo {
-        margin: 0 30px;
-        color: black;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 50%;
-        position: relative;
-        overflow: hidden;
-        font-size: 22px;
-        text-align: center;
-        width: 50px;
-        height: 47px;
-        z-index: 10;
+    .img_resp_phone_conteneur
+    {
+        width: 150px;
+        height: 150px;
     }
-
-    .logo_phone_logo::after {
-        position: absolute;
-        content: '';
-        top: 100%;
-        left: 0;
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        z-index: -1;
-        border-radius: 50%;
-    }
-
-    .logo_phone_logo:hover::after {
-        top: 0;
-        transition: 0.5s;
-        color: white;
-    }
-
-    .logo_phone_logo:hover {
-        color: white;
-        transition: 0.5s;
-    }
-
-    .ligne_phone_compt {
-        justify-content: center;
-        width: 90%; /* Largeur ajustée pour mieux s'adapter aux petits écrans */
-        height: 0.5px;
-        background-color: black;
+    .text_phone
+    {
+        top: 180px;
     }
 }
 
-/* Ajustements supplémentaires pour les écrans encore plus petits */
-@media (max-width: 765px) {
-    .phone_fond {
-        height: 60vh; /* Ajuste la hauteur de l'élément */
+@media (min-height:667px) and (max-height:896px) 
+{
+    .logo_phone_logo
+    {
+        margin: 0 10px;
+        font-size: 18px;  
+        width: 40px; 
+        height: 37px;
     }
-
-    .img_resp_phone_conteneur {
-        width: 160px;
-        height: 160px; /* Taille légèrement réduite */
+    .phone_fond
+    {
+        height: 45%;
+        background-color: green;
     }
-
-    .text_phone {
-        top: 25%; /* Ajustement de la position du texte */
+}
+@media (max-height:668px)
+{
+    /* .logo_phone_logo
+    {
+        margin: 0 10px;
+        font-size: 22px;  
+    } */
+    .img_resp_phone_conteneur
+    {
+        width: 150px;
+        height: 150px;
     }
-
-    .logo_phone_logo {
-        width: 45px;
-        height: 45px; /* Réduction de la taille du logo */
+    .text_phone
+    {
+        top: 170px;
     }
-
-    .ligne_phone {
-        top: 40%;
+    .ligne_phone
+    {
+        top: 240px;
+    }
+    .phone_fond
+    {
+        height: 48%;
+        background-color: gold;
     }
 }
 
-@media (max-height: 776px) {
-    .phone_fond {
-        height: 50vh; /* Moins de hauteur pour les petits écrans */
-    }
-}
-
-@media (max-height: 711px) {
-    .phone_fond {
-        height: 55vh;
-    }
-}
-
-@media (max-height: 644px) {
-    .phone_fond {
-        height: 60vh; /* Ajustement pour les petits appareils */
-    }
-}
-
-@media (max-height: 597px) {
-    .phone_fond {
-        height: 85vh; /* Plus grande hauteur pour les écrans plus petits */
-    }
-}
-
-@media (max-height: 550px) {
-    .phone_fond {
-        height: 75vh; /* Réduit la hauteur pour plus de confort */
-    }
-}
