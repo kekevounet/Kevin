@@ -83,6 +83,6 @@ $(function ()
 
     });
 });
-$(window).on('load', function () {
-    $('#preloader').fadeOut('slow');
-});
+// $(window).on('load', function () {
+//     $('#preloader').fadeOut('slow');
+// });

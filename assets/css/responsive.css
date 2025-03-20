@@ -40,3 +40,10 @@
     }
 }
 
+@media (max-height:667px)
+{
+    body
+    {
+        overflow: hidden;
+    }
+}
